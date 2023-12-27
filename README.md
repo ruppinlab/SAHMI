@@ -4,7 +4,7 @@ Bassel Ghaddar
 7/31/2022
 
 ## Fork Overview
-This is a fork of the official SAHMI repository to be compatible with CSI-Microbes. For any other purposes, please use the official repository. 
+This is a fork of the official SAHMI repository by Welles Robinson to be compatible with CSI-Microbes. For any other purposes, please use the official repository. 
 
 ## Introduction
 
