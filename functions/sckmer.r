@@ -110,6 +110,8 @@ for(taxa in tx){
     as.numeric() %>% 
     unique()
   
+  full.lin <- full.lin[!is.na(full.lin)]
+
   out = subset(microbiome_output_file, taxid %in% lin) %>% separate(V5, into = c('r1', 'r2'), sep = '\\|\\:\\|') 
   out$r1[str_which(out$r1, paste0(' ', opt$host, ':'))] = NA
   out$r2[str_which(out$r2, paste0(' ', opt$host, ':'))] = NA

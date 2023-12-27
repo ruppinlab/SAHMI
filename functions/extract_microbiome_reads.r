@@ -17,7 +17,7 @@ opt = parse_args(OptionParser(option_list = option_list))
 kr = read.delim(opt$kraken_report, header = F)
 kr = kr[-c(1:2), ]
 mpa = read.delim(opt$mpa_report, header = F)
-n = str_which(mpa$V1, 'k__Bacteria|k__Fungi|k__Viruses')
+n = str_which(mpa$V1, 'x__Bacteria|k__Fungi|x__Viruses')
 taxid = kr$V7[n]
 taxid.list = split(taxid, ceiling(seq_along(taxid)/opt$ntaxid))
 

@@ -72,9 +72,9 @@ rm(bc)
 write.table(s.bc, file = paste0(opt$out_path, opt$sample_name, '.all.barcodes.txt'),
             quote = F, sep='\t', row.names = F, col.names = T)
 
-s.mat = sparseMatrix(as.integer(s.bc$barcode), as.integer(s.bc$taxid), x=s.bc$umi)
-colnames(s.mat) = levels(s.bc$taxid)
-rownames(s.mat) = levels(s.bc$barcode)
+s.mat = sparseMatrix(as.factor(s.bc$barcode), as.factor(s.bc$taxid), x=s.bc$umi)
+colnames(s.mat) = levels(as.factor(s.bc$taxid))
+rownames(s.mat) = levels(as.factor(s.bc$barcode))
 s.mat = t(s.mat)
 
 print(paste('Started classifying reads for', opt$sample_name))
