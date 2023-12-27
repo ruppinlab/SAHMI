@@ -3,6 +3,9 @@ SAHMI: Single-cell Analysis of Host-Microbiome Interactions
 Bassel Ghaddar
 7/31/2022
 
+## Fork Overview
+This is a fork of the official SAHMI repository to be compatible with CSI-Microbes. For any other purposes, please use the official repository. 
+
 ## Introduction
 
 SAHMI enables the systematic recovery and denoising of microbial signals from genomic sequencing of host tissues. The pipeline consists of R command line functions that implement the following main steps which are further described below.
